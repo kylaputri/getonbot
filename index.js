@@ -1936,100 +1936,90 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, pok, image, { quoted: iky, caption: `*PINTEREST*`})
 					await limitAdd(sender)
 					break 
+           
            case 'waifu':
-			    if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			    if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/waifu?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'randombts':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/randombts?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'randomexo':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/randomexo?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'blackpink':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/blackpink?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'imageislamic':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/wpislamic?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'imagecyberspace':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/wpcyberspace?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'imagegame':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/wpgame?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'loli':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/randomloli?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'imagemountain':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/wpmountain?apikey=tsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
            case 'husbu':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/husbu?apikey=itsmeiky633`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky })
 					await limitAdd(sender) 
 					break
 		   case 'mimpi':
-			        if (isBanned) return reply(mess.only.benned)
-			        if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 			        reply(mess.wait)
 			        anu = await fetchJson(`https://api.shizukaa.xyz/api/artimimpi?apikey=itsmeiky633&q=belanja`, {method: 'get'})
 			        mimpi = `Arti Mimpi *${body.slice(7)}* Adalah:\n${anu.result}`
@@ -2037,36 +2027,32 @@ itsmeiky.on('group-participants-update', async (anu) => {
 			        await limitAdd(sender) 
 			    	break
 		     case 'fakta':
-				    if (isBanned) return reply(mess.only.benned)   
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			        if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/fakta?apikey=itsmeiky633`, {method: 'get'})
 					fakta = `Faktanya: *${anu.result}*`
 					itsmeiky.sendMessage(from, fakta, text, {quoted: iky })
 					await limitAdd(sender) 
 					break 
 				case 'katabijak':
-				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/bijak?apikey=itsmeiky633`, {method: 'get'})
 					katabijak = `Kata Bijak: *${anu.result}*`
 					itsmeiky.sendMessage(from, katabijak, text, {quoted: iky })
 					await limitAdd(sender) 
 					break
 			case 'katailham':
-			    if (isBanned) return reply(mess.only.benned) 
-			    if (isLimit(sender)) return reply(limits.limitend(pushname2))				    
-				if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				anu = await fetchJson(`https://api.shizukaa.xyz/api/bacotanilham?apikey=itsmeiky633`, {method: 'get'})
 				kata = anu.result
 				itsmeiky.sendMessage(from, kata, text, {quoted: iky })
 				await limitAdd(sender)
 				break
 				case 'caklontong':
-                if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/caklontong?apikey=itsmeiky633`, {method: 'get'})
 					caklontong = `*${anu.pertanyaan}*`
 					setTimeout( () => {
@@ -2087,15 +2073,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender) 
 					break 
 		         case 'babi':
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
                  const gshizuka = await itsmeiky.getGroupMembersId(groupId)
                  let gmik = gshizuka[Math.floor(Math.random() * gshizuka.length)]
                  const mmkk = `YANG PALING BABI DISINI ADALAH @${gmik.replace(/@c.us/g, '')}`
                  itsmeiky.sendTextWithMentions(dari, mmkk, id)
                  break
 				case 'tebakgambar':
-                if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/tebakgambar?apikey=itsmeiky633`, {method: 'get'})
 					bufferkkk = await getBuffer(anu.img_url)
 					setTimeout( () => {
@@ -2116,18 +2103,16 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender) 
 					break  
 		case 'spamcall':
-			if (isBanned) return reply(mess.only.benned)
-			if (isLimit(sender)) return reply(limits.limitend(pushname2))
-			if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 			call = `${body.slice(11)}`
 			anu = await fetchJson(`https://api.shizukaa.xyz/api/spamcall?apikey=itsmeiky633&nohp=${call}`, {method: 'get'})
 			itsmeiky.sendMessage(from, `${anu.result.logs}`, text, {quoted: iky })
 			await limitAdd(sender) 
 			break  
 				case 'wiki':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
                 if (args.length < 1) return reply('teks nya mana om?')
                 reply(mess.wait)
                 wiki = `${body.slice(6)}`
@@ -2138,9 +2123,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
                 await limitAdd(sender) 
                 break
                case 'asupan':
-                if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-	        	if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
                 reply(mess.wait)
                 anu = await fetchJson(`https://api.shizukaa.xyz/api/asupan?apikey=itsmeiky633`)
                 asup = await getBuffer(anu.result)
@@ -2148,9 +2132,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
                 await limitAdd(sender) 
                 break
                case 'ytmp4':
-    				if (isBanned) return reply(mess.only.benned)    
-    				if (!isPrem) return reply(mess.only.premium)
-    				if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/ytmp4?apikey=itsmeiky633&url=${args[0]}`, {method: 'get'})
@@ -2164,9 +2147,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender) 
 					break 
 			case 'ytmp3':
-					if (isBanned) return reply(mess.only.benned)    
-					if (!isPrem) return reply(mess.only.premium)
-					if (!isUser) return reply(mess.only.userB)
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.shizukaa.xyz/api/ytmp3?apikey=itsmeiky633&url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
@@ -2181,9 +2163,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					break
 			 case 'nsfwloli':
 				    try {
-				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
-				    if (isLimit(sender)) return reply(limits.limitend(pushname2))
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
 						if (!isNsfw) return reply(' *FALSE* ')
 						res = await fetchJson(`https://api.shizukaa.xyz/api/neko?apikey=itsmeiky633`, {method: 'get'})
 						buffer = await getBuffer(res.neko)
@@ -2194,16 +2175,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					    }
 					    await limitAdd(sender)
 					    break
-		case 'lirik':
-					if (isLimit(sender)) return reply(ind.limitend(pusname))
-					if (!isRegistered) return reply(ind.noregis())
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					if (args.length < 1) return reply('Lirik lagunya mana kak?')
-					tels = body.slice(7)
-					anu = await fetchJson(`https://scrap.terhambar.com/lirik?word=${tels}`, {method: 'get'})
-					reply('*Lirik lagu* 🎶'+tels+' 🎶 :\n\n\n'+anu.result.lirik)
-					await limitAdd(sender)
-					break
 		case 'hilih': 
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (!isRegistered) return reply(ind.noregis())
