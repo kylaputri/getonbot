@@ -155,6 +155,30 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}menupict
   └─ ❏ ${prefix}menuowner
   
+◪ *NEW FEATURE*
+  │
+  ├─ ❏ ${prefix}nsfwloli
+  ├─ ❏ ${prefix}asupan
+  ├─ ❏ ${prefix}wiki
+  ├─ ❏ ${prefix}spamcall
+  ├─ ❏ ${prefix}tebakgambar
+  ├─ ❏ ${prefix}babi
+  ├─ ❏ ${prefix}caklontong
+  ├─ ❏ ${prefix}katailham
+  ├─ ❏ ${prefix}katabijak
+  ├─ ❏ ${prefix}fakta
+  ├─ ❏ ${prefix}mimpi
+  ├─ ❏ ${prefix}husbu
+  ├─ ❏ ${prefix}imagemountain
+  ├─ ❏ ${prefix}loli
+  ├─ ❏ ${prefix}imagegame
+  ├─ ❏ ${prefix}imagecyberspace
+  ├─ ❏ ${prefix}imageislamic
+  ├─ ❏ ${prefix}blackpink
+  ├─ ❏ ${prefix}randomexo
+  ├─ ❏ ${prefix}randombts
+  └─ ❏ ${prefix}menuownerwaifu
+
 ◪ *MAKER*
   │
   ├─ ❏ ${prefix}nulis
@@ -236,6 +260,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   │
   │ *RANDOM KPOP*
   ├─ ❏ ${prefix}randomkpop
+  ├─ ❏ ${prefix}randombts
+  ├─ ❏ ${prefix}randomexo
+  ├─ ❏ ${prefix}blackpink
   │
   │ *CARTOON*
   ├─ ❏ ${prefix}doraemon
@@ -263,6 +290,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}quotes
   ├─ ❏ ${prefix}quoteskehidupan
   ├─ ❏ ${prefix}quotesislami
+  ├─ ❏ ${prefix}katabijak
+  ├─ ❏ ${prefix}katailham
   ├─ ❏ ${prefix}quotesnasehat
   └─ ❏ ${prefix}quotesmotivasi
   
