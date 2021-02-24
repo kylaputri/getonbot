@@ -1383,7 +1383,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				bh = body.slice(11)
 				reply(ind.wait())
-				bh = await getBuffer(`https://mhankbarbar.tech/api/htahta?apiKey=Q7MLdUnVSkXgLmQE9liX&text=${bh`)
+				bh = await getBuffer(`https://mhankbarbar.tech/api/htahta?apiKey=Q7MLdUnVSkXgLmQE9liX&text=${bh}`)
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
