@@ -368,6 +368,10 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   |
   ├─ ❏ ${prefix}blowjob
   ├─ ❏ ${prefix}randomhentai
+  ├─ ❏ ${prefix}sfw
+  ├─ ❏ ${prefix}nsfw
+  ├─ ❏ ${prefix}randomsfw
+  ├─ ❏ ${prefix}randomnsfw
   └─ ❏ ${prefix}nsfwneko
   
 ◪ *FUN*
