@@ -50,7 +50,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG: Pengembang Shizuka BOT;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6281281872699:+62 812-8187-2699\n' 
             + 'END:VCARD'
-prefix = '#'
+prefix = '$'
 blocked = []   
 limitawal = 5
 memberlimit = 0
@@ -1389,6 +1389,51 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				bhaine = body.slice(9)
 				reply(ind.wait())
 				anu = await fetchJson(`https://api.zeks.xyz/api/thundertext?text=${bhaine}&apikey=apivinz`)
+				buffer = await getBuffer(anu.result)
+				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'sfw':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				bhaine = body.slice(4)
+				reply(ind.wait())
+				anu = await fetchJson(`https://api.shizukaa.xyz/api/sfw?apikey=itsmeiky633&q=${bhaine}`)
+				buffer = await getBuffer(anu.result)
+				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'snfw':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				bhaine = body.slice(4)
+				reply(ind.wait())
+				anu = await fetchJson(`https://api.shizukaa.xyz/api/snsfw?apikey=itsmeiky633&q=${bhaine}`)
+				buffer = await getBuffer(anu.result)
+				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'randomsfw':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				reply(ind.wait())
+				anu = await fetchJson(`https://api.shizukaa.xyz/api/animesfw?apikey=itsmeiky633`)
+				buffer = await getBuffer(anu.result)
+				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'randomsnfw':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				bhaine = body.slice(4)
+				reply(ind.wait())
+				anu = await fetchJson(`https://api.shizukaa.xyz/api/animensfw?apikey=itsmeiky633`)
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
