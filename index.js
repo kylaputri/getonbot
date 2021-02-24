@@ -1394,7 +1394,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				bh = body.slice(11)
 				reply(ind.wait())
-				bh = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/blackpink?apikey=7201f836013adbe80a4d4182&text=${bh`)
+				bh = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/blackpink?apikey=7201f836013adbe80a4d4182&text=${bh}`)
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
