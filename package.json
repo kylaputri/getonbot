@@ -1,7 +1,7 @@
 {
-  "name": "AINEBOT",
+  "name": "ITSMEIKY",
   "version": "1.0.0",
-  "description": "Aine for whatsapp online with termux",
+  "description": "Shizuka for whatsapp online with termux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -18,15 +18,15 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Muhammad Ridwan Reynaldy",
+  "author": "ItsmeikyXSec404",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anemio/ainebotv5.git"
+    "url": "git+https://github.com/ItsmeikyXSec4O4/ShizukaBOT.git"
   },
   "bugs": {
-    "url": "https://github.com/anemio/ainebotv5/issues"
+    "url": "https://github.com/ItsmeikyXSec4O4/ShizukaBOT/issues"
   },
-"homepage": "https://github.com/anemio/ainebotv5/readme",
+"homepage": "https://github.com/ItsmeikyXSec4O4/readme.md",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
