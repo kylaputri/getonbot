@@ -1224,8 +1224,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				gl1 = gh.split("|")[0];
 				gl2 = gh.split("|")[1];
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1}&text2=${gl2}&apikey=BotWeA`, {method: 'get'})
-				buff = await getBuffer(anu.result)
+				buff = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/ninjalogo?apikey=beta&text1=${gl1}&text2=${gl2}`)
 				itsmeiky.sendMessage(from, buff, image, {quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1236,8 +1235,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply('Teksnya mana kak?')
 				teks = `${body.slice(8)}`
 				reply(ind.wait())
-				anu = await fetchJson(`https://api.zeks.xyz/api/text3d?text=${teks}&apikey=apivinz`, {method: 'get'})
-				buffer = await getBuffer(anu.result)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/box3d?apikey=7201f836013adbe80a4d4182&text=${teks}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 			     	await limitAdd(sender)
 				break
@@ -1250,8 +1248,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				var tels4 = gh.split("|")[1];
 				if (args.length < 1) return reply(ind.wrongf())
 				reply(ind.wait())
-				anu = await fetchJson(`https://api.zeks.xyz/api/gtext?text1=${tels3}&text2=${tels4}&apikey=apivinz`, {method: 'get'})
-				buffer = await getBuffer(anu.result)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/glitch?apikey=7201f836013adbe80a4d4182&text1=${tels3}&text2=${tels4}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1264,8 +1261,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				zeks1 = gh.split("|")[0];
 				zeks2 = gh.split("|")[1];
 				reply(ind.wait())
-				anu = await fetchJson(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=${zeks1}&text2=${zeks2}`, {method: 'get'})
-				buffer = await getBuffer(anu.result)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/wolflogo?apikey=7201f836013adbe80a4d4182&text1=${zeks1}&text2=${zeks2}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1292,8 +1288,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				gl1 = gh.split("|")[0];
 				gl2 = gh.split("|")[1];
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${gl1}&text2=${gl2}&apikey=BotWeA`, {method: 'get'})
-				buffer = await getBuffer(anu.result)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=7201f836013adbe80a4d4182&text1=${gl1}&text2=${gl2}`)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1304,7 +1299,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				ct = body.slice(7)
 				reply(ind.wait())
-				ct = await getBuffer(`https://api.zeks.xyz/api/nulis?text=${ct}&apikey=apivinz`)
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/nulis?apikey=7201f836013adbe80a4d4182&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'tolol':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(7)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=7201f836013adbe80a4d4182&text=${ct}`)
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1377,7 +1383,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				bh = body.slice(11)
 				reply(ind.wait())
-				bh = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${bh}&apikey=apivinz`)
+				bh = await getBuffer(`https://mhankbarbar.tech/api/htahta?apiKey=Q7MLdUnVSkXgLmQE9liX&text=${bh`)
+				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'cblackpink':
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				bh = body.slice(11)
+				reply(ind.wait())
+				bh = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/blackpink?apikey=7201f836013adbe80a4d4182&text=${bh`)
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1393,51 +1410,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
-		case 'sfw':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply(ind.wrongf())
-				bhaine = body.slice(4)
-				reply(ind.wait())
-				anu = await fetchJson(`https://api.shizukaa.xyz/api/sfw?apikey=itsmeiky633&q=${bhaine}`)
-				buffer = await getBuffer(anu.result)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-		case 'snfw':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply(ind.wrongf())
-				bhaine = body.slice(4)
-				reply(ind.wait())
-				anu = await fetchJson(`https://api.shizukaa.xyz/api/snsfw?apikey=itsmeiky633&q=${bhaine}`)
-				buffer = await getBuffer(anu.result)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-		case 'randomsfw':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				reply(ind.wait())
-				anu = await fetchJson(`https://api.shizukaa.xyz/api/animesfw?apikey=itsmeiky633`)
-				buffer = await getBuffer(anu.result)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-		case 'randomsnfw':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				bhaine = body.slice(4)
-				reply(ind.wait())
-				anu = await fetchJson(`https://api.shizukaa.xyz/api/animensfw?apikey=itsmeiky633`)
-				buffer = await getBuffer(anu.result)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
 		case 'imgmaker':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1445,7 +1417,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply('Url png/jpg mana kak')
 				ainez = body.slice(10)
 				reply(ind.wait())
-				anu = await fetchJson(`https://api.zeks.xyz/api/cloudy?img=${ainez}&apikey=apivinz`, {method: 'get'})
+				anu = await fetchJson(`http://lolhuman.herokuapp.com/api/quotemaker?apikey=7201f836013adbe80a4d4182&text=${ainez}`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
@@ -1690,7 +1662,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				aruga = body.slice(10)
 				reply(ind.wait())
-				aruga = await getBuffer(`https://arugaz.my.id/api/textpro/greenneon?text=${aruga}`)
+				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=7201f836013adbe80a4d4182&text=LoLHuman${aruga}`)
 				itsmeiky.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: iky})
 				await limitAdd(sender)
 				break 
@@ -1701,7 +1673,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				aruga = body.slice(10)
 				reply(ind.wait())
-				aruga = await getBuffer(`https://arugaz.my.id/api/textpro/neontext?text=${aruga}`)
+				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/neon?apikey=7201f836013adbe80a4d4182&text=LoLHuman${aruga}`)
 				itsmeiky.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: iky})
 				await limitAdd(sender)
 				break 
