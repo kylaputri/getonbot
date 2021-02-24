@@ -258,7 +258,7 @@ function kyun(seconds){
 const itsmeiky = new WAConnection()
    itsmeiky.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(color('[','white'),color('∆','red'),color(']','white'),color('QR code is ready, Scan now..','white'),color('AINE','red'),color('BOT','lime'))
+   console.log(color('[','white'),color('∆','red'),color(']','white'),color('QR code is ready, Scan now..','white'),color('ITSMEIKY','red'),color('XSEC404','lime'))
 })
 
 itsmeiky.on('credentials-updated', () => {
@@ -2281,7 +2281,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 		case 'grouplist':
 					if (!isRegistered) return reply(ind.noregis())
 					itsmeiky.updatePresence(from, Presence.composing) 
-					teks = `\`\`\`Ini adalah list group AINE BOT :\n\n\`\`\``
+					teks = `\`\`\`Ini adalah list group SHIZUKA BOT :\n\n\`\`\``
 					no = 0
 					for (let hehehe of groupId) {
 						no += 1
