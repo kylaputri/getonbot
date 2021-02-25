@@ -219,6 +219,24 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}chord [teks]
   ├─ ❏ ${prefix}katabijak 
   ├─ ❏ ${prefix}faktaunik 
+  ├─ ❏ ${prefix}faktaunikl
+  ├─ ❏ ${prefix}holoh
+  ├─ ❏ ${prefix}halah
+  ├─ ❏ ${prefix}huluh
+  ├─ ❏ ${prefix}heleh
+  ├─ ❏ ${prefix}hurufterbalik
+  ├─ ❏ ${prefix}lirik
+  ├─ ❏ ${prefix}alay2
+  ├─ ❏ ${prefix}fml
+  ├─ ❏ ${prefix}katadilan
+  ├─ ❏ ${prefix}katabucin
+  ├─ ❏ ${prefix}katabucin2
+  ├─ ❏ ${prefix}cerpen
+  ├─ ❏ ${prefix}quotes
+  ├─ ❏ ${prefix}bacotanhacker
+  ├─ ❏ ${prefix}quotedoraemon
+  ├─ ❏ ${prefix}infofilm
+  ├─ ❏ ${prefix}igvideo
   ├─ ❏ ${prefix}pantun
   └─ ❏ ${prefix}artinama [teks]
   
@@ -400,6 +418,12 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}infogempa
   ├─ ❏ ${prefix}infocuaca
   ├─ ❏ ${prefix}infonomor
+  ├─ ❏ ${prefix}covidindo
+  ├─ ❏ ${prefix}covidglobal
+  ├─ ❏ ${prefix}ceknamaff
+  ├─ ❏ ${prefix}namaninja
+  ├─ ❏ ${prefix}newsinfo
+  └─ ❏ ${prefix}ceknamaml
   
 ◪ *OWNER*
   │
