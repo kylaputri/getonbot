@@ -1,7 +1,8 @@
 //Anjing Mau Nyolong Ya ?
 //Kasih Nama Itsmeiky Lah Bang Hargain Dikit Gw Capek :(
-//And Gw Bau Bau Ada Kang Colong Case Nih :v
+//And Gw Mencium Bau Bau Ada Kang Colong Case Nih :v
 //Gak Usah Di Hapus Gblk Dimana Harga Diri Lu Gw Capek2 Ngefix malah di hapus
+//Fixed Some Bug By RzkyO
 const {
    WAConnection,
    MessageType,
@@ -52,12 +53,12 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 prefix = '$'
 blocked = []   
-limitawal = 5
+limitawal = 40
 memberlimit = 0
 cr = '*SHIZUKA THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281281872699@s.whatsapp.net"] 
+const ownerNumber = ["6281212594112@s.whatsapp.net"] 
 const pacarNumber = ["6281281872699@s.whatsapp.net"]
 /************************************/
 
@@ -1235,7 +1236,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply('Teksnya mana kak?')
 				teks = `${body.slice(8)}`
 				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/box3d?apikey=7201f836013adbe80a4d4182&text=${teks}`)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/box3d?apikey=WEMPYGANSS&text=${teks}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 			     	await limitAdd(sender)
 				break
@@ -1248,7 +1249,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				var tels4 = gh.split("|")[1];
 				if (args.length < 1) return reply(ind.wrongf())
 				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/glitch?apikey=7201f836013adbe80a4d4182&text1=${tels3}&text2=${tels4}`)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/glitch?apikey=WEMPYGANSS&text1=${tels3}&text2=${tels4}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1261,7 +1262,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				zeks1 = gh.split("|")[0];
 				zeks2 = gh.split("|")[1];
 				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/wolflogo?apikey=7201f836013adbe80a4d4182&text1=${zeks1}&text2=${zeks2}`)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/wolflogo?apikey=WEMPYGANSS&text1=${zeks1}&text2=${zeks2}`)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1288,7 +1289,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				gl1 = gh.split("|")[0];
 				gl2 = gh.split("|")[1];
 				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=7201f836013adbe80a4d4182&text1=${gl1}&text2=${gl2}`)
+				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=WEMPYGANSS&text1=${gl1}&text2=${gl2}`)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1299,7 +1300,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				ct = body.slice(7)
 				reply(ind.wait())
-				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/nulis?apikey=7201f836013adbe80a4d4182&text=${ct}`)
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/nulis?apikey=WEMPYGANSS&text=${ct}`)
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1310,7 +1311,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				ct = body.slice(7)
 				reply(ind.wait())
-				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=7201f836013adbe80a4d4182&text=${ct}`)
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=WEMPYGANSS&text=${ct}`)
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1394,7 +1395,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				bh = body.slice(11)
 				reply(ind.wait())
-				bh = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/blackpink?apikey=7201f836013adbe80a4d4182&text=${bh}`)
+				bh = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/blackpink?apikey=WEMPYGANSS&text=${bh}`)
 				itsmeiky.sendMessage(from, bh, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
@@ -1417,7 +1418,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply('Url png/jpg mana kak')
 				ainez = body.slice(10)
 				reply(ind.wait())
-				anu = await fetchJson(`http://lolhuman.herokuapp.com/api/quotemaker?apikey=7201f836013adbe80a4d4182&text=${ainez}`, {method: 'get'})
+				anu = await fetchJson(`http://lolhuman.herokuapp.com/api/quotemaker?apikey=WEMPYGANSS&text=${ainez}`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
@@ -1662,7 +1663,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				aruga = body.slice(10)
 				reply(ind.wait())
-				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=7201f836013adbe80a4d4182&text=LoLHuman${aruga}`)
+				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/greenneon?apikey=WEMPYGANSS&text=LoLHuman${aruga}`)
 				itsmeiky.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: iky})
 				await limitAdd(sender)
 				break 
@@ -1673,7 +1674,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply(ind.wrongf())
 				aruga = body.slice(10)
 				reply(ind.wait())
-				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/neon?apikey=7201f836013adbe80a4d4182&text=LoLHuman${aruga}`)
+				aruga = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/neon?apikey=WEMPYGANSS&text=LoLHuman${aruga}`)
 				itsmeiky.sendMessage(from, aruga, image, {caption: 'Nih kak', quoted: iky})
 				await limitAdd(sender)
 				break 
@@ -1781,14 +1782,24 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(cop)
 					await limitAdd(sender)
 					break
-		case 'covid':
+		case 'covidindo': // Update By RzkyO
 					if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					data = await fetchJson(`https://arugaz.herokuapp.com/api/coronaindo`)
-					hasil = `Positif : ${data.kasus_total}\nSembuh : ${data.sembuh}\nMeninggal : ${data.meninggal}\nDirawat : ${data.penanganan}`
+					data = await fetchJson(`https://videfikri.com/api/covidindo/`)
+					hasil = `Positif : ${data.result.positif}\nSembuh : ${data.result.sembuh}\nMeninggal : ${data.result.meninggal}\nDirawat : ${data.result.dalam_perawatan}`
 					reply(hasil)
 					await limitAdd(sender)
+					break		
+		case 'covidglobal': // Update By RzkyO   
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				itsmeiky.updatePresence(from, Presence.composing) 
+			    tels = body.slice(12)
+				asu = await fetchJson(`http://lolhuman.herokuapp.com/api/corona/global?apikey=WEMPYGANSS`)
+				ez = `*╠➥  Positif :* ${asu.result.positif}\n*╠➥  Sembuh :* ${asu.result.sembuh}\n*╠➥  Di Rawat :* ${asu.result.dirawat}\n*╠➥  Meninggal :* ${asu.result.meninggal}\n`
+				reply(ez)
+				await limitAdd(sender)
 					break
 		case 'infonomor':
 					if (!isRegistered) return reply(ind.noregis())
@@ -2201,6 +2212,58 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(anu.result)
 					await limitAdd(sender)
 					break
+		case 'holoh': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					if (args.length < 1) return reply('kasih teks lah^_^!!!')
+					anu = await fetchJson(`https://a.apimau.ga/vokal?vokal=o&teks=${body.slice(7)}`, {method: 'get'})
+					reply(anu.result)
+					await limitAdd(sender)
+					break
+		case 'halah': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					if (args.length < 1) return reply('kasih teks lah^_^!!!')
+					anu = await fetchJson(`https://a.apimau.ga/vokal?vokal=a&teks=${body.slice(7)}`, {method: 'get'})
+					reply(anu.result)
+					await limitAdd(sender)
+					break
+		case 'huluh': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					if (args.length < 1) return reply('kasih teks lah^_^!!!')
+					anu = await fetchJson(`https://a.apimau.ga/vokal?vokal=u&teks=${body.slice(7)}`, {method: 'get'})
+					reply(anu.result)
+					await limitAdd(sender)
+					break
+		case 'heleh': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					if (args.length < 1) return reply('kasih teks lah^_^!!!')
+					anu = await fetchJson(`https://a.apimau.ga/vokal?vokal=e&teks=${body.slice(7)}`, {method: 'get'})
+					reply(anu.result)
+					await limitAdd(sender)
+					break
+		case 'hurufterbalik': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+					gatauda = body.slice(14)
+					anu = await fetchJson(`https://videfikri.com/api/hurufterbalik/?query=${gatauda}`, {method: 'get'})
+					reply(anu.result.kata)
+					await limitAdd(sender)
+					break
+		case 'lirik': // Update By RzkyO
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (!isRegistered) return reply(ind.noregis())
+					teks = body.slice(6)
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/lirik?q=${teks}&apikey=BotWeA`, {method: 'get'})
+					reply('Lirik dari lagu '+teks+' adalah :\n\n'+anu.result.lirik)
+					await limitAdd(sender)
+					break
 		case 'alay':
 					if (!isRegistered) return reply(ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -2266,7 +2329,52 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					hasil = `Fullname : ${hmm.fullname}\nPengikut : ${hmm.follower}\nMengikuti : ${hmm.following}\nPrivate : ${hmm.is_private}\nVerified : ${hmm.is_verified}\nbio : ${hmm.bio}`
 					itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: hasil})
 					await limitAdd(sender)
-					break/*
+					break
+		case 'github': // masih ngebug
+			        if (!isRegistered) return reply(ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (isBanned) return reply('Maaf kamu sudah terbenned!')
+					ige = body.slice(7)
+					anu = await fetchJson(`https://a.apimau.ga/github?user=${ige}`)
+					buffer = await getBuffer(anu.avatar_url)
+					hasil = `User Ditemukan!!\n\n*➸ Nama :* ${anu.name}\n*➸ Bio :* ${anu.bio}\n*➸ Company :* ${anu.company}\n*➸ Blog :* ${anu.blog}\n*➸ Jumlah Post :* ${anu.public_repos}\n*➸ Private :* ${anu.public_gists}\n*➸ Update At :* ${anu.updated_at}`
+					itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: hasil})
+					await limitAdd(sender)
+					break
+					case 'igvideo': // Update By RzkyO
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (args.length < 1) return reply('Urlnya mana tong?')
+				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
+					 ige = body.slice(9)
+                     anu = await fetchJson(`http://lolhuman.herokuapp.com/api/instagram?apikey=WEMPYGANSS&url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result)
+                    itsmeiky.sendMessage(from, buffer, video, )
+				    break
+				case 'igpost': // Update By RzkyO
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (args.length < 1) return reply('Urlnya mana tong?')
+				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
+					 ige = body.slice(8)
+                     anu = await fetchJson(`http://lolhuman.herokuapp.com/api/instagram?apikey=WEMPYGANSS&url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result)
+                    itsmeiky.sendMessage(from, buffer, image, )
+				    break
+				case 'igtv': // Update By RzkyO
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (args.length < 1) return reply('Urlnya mana tong?')
+				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
+					 ige = body.slice(6)
+                     anu = await fetchJson(`http://lolhuman.herokuapp.com/api/instagram?apikey=WEMPYGANSS&url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result)
+                    itsmeiky.sendMessage(from, buffer, video, )
+				    break
+					/*
                 case 'kickall':
 					if (!isOwner) return reply(ind.ownerb())
 					members_id = []
@@ -3373,6 +3481,18 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						console.log(`Error :`, color(e,'red'))
 						reply('*(ERROR)* *Kemungkinan username tidak valid*')
 					}
+					await limitAdd(sender)
+					break
+		case 'tiktoknowm': // masih ngebug
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (args.length < 1) return reply('Urlnya mana um?')
+					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
+					itsmeiky.sendMessage(from, mess.wait, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid:  "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*@rizky.oryza*", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "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", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
+					anu = await fetchJson(`http://lolhuman.herokuapp.com/api/tiktok?apikey=WEMPYGANSS&url=${args[0]}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					buffer = await getBuffer(anu.result.link)
+					itsmeiky.sendMessage(from, buffer, video, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*@rizky.oryza*", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "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", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
 					await limitAdd(sender)
 					break
                  case 'linkgc':
