@@ -187,17 +187,14 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}toimg
   ├─ ❏ ${prefix}hartatata
   ├─ ❏ ${prefix}quotemaker
-  ├─ ❏ ${prefix}imgmaker
-  ├─ ❏ ${prefix}tolol
-  ├─ ❏ ${prefix}ninjalogo
-  ├─ ❏ ${prefix}text3d
-  ├─ ❏ ${prefix}glitch
-  ├─ ❏ ${prefix}wolflogo
-  ├─ ❏ ${prefix}lionlogo
-  ├─ ❏ ${prefix}grenneon
-  ├─ ❏ ${prefix}neontext
-  ├─ ❏ ${prefix}cblackpink
-  └─ ❏ ${prefix}calendermaker
+  ├─ ❏ ${prefix}galaxtext
+  ├─ ❏ ${prefix}pupycut
+  ├─ ❏ ${prefix}galaxstyle
+  ├─ ❏ ${prefix}hologram
+  ├─ ❏ ${prefix}textbyname
+  ├─ ❏ ${prefix}herrypoter
+  ├─ ❏ ${prefix}greanneon
+  └─ ❏ ${prefix}metallogo
   
 ◪ *MEDIA*
   │
