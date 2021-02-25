@@ -263,6 +263,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}ytmp4 [link]
   ├─ ❏ ${prefix}play [teks]
   ├─ ❏ ${prefix}fototiktok
+  ├─ ❏ ${prefix}igpost [teks]
+  ├─ ❏ ${prefix}igtv
   └─ ❏ ${prefix}joox [teks]
   
 ◪ *FIND TARGET*
