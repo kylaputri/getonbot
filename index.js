@@ -1230,100 +1230,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					})
 					await limitAdd(sender)
 					break
-                 case 'qrcode':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return itsmeiky.sendMessage(from, '*Masukkan Teks/Url yang ingin di buat QR*', text, {quoted: iky})
-					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
-					itsmeiky.sendMessage(from, buff, image, {quoted: iky})
-					await limitAdd(sender)
-					break
-                case 'ninjalogo':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply('Teks nya mana kak?')
-				gh = body.slice(11)
-				gl1 = gh.split("|")[0];
-				gl2 = gh.split("|")[1];
-				reply(ind.wait())
-				buff = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/ninjalogo?apikey=beta&text1=${gl1}&text2=${gl2}`)
-				itsmeiky.sendMessage(from, buff, image, {quoted: iky})
-				await limitAdd(sender)
-				break
-		case 'text3d':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply('Teksnya mana kak?')
-				teks = `${body.slice(8)}`
-				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome/box3d?apikey=WEMPYGANSS&text=${teks}`)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-			     	await limitAdd(sender)
-				break
-                case 'glitch':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				var gh = body.slice(8)
-				var tels3 = gh.split("|")[0];
-				var tels4 = gh.split("|")[1];
-				if (args.length < 1) return reply(ind.wrongf())
-				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/glitch?apikey=WEMPYGANSS&text1=${tels3}&text2=${tels4}`)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-                case 'wolflogo':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply('Teks nya mana?')
-				gh = body.slice(10)
-				zeks1 = gh.split("|")[0];
-				zeks2 = gh.split("|")[1];
-				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/wolflogo?apikey=WEMPYGANSS&text1=${zeks1}&text2=${zeks2}`)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-                case 'phlogo':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply('Teks nya mana?')
-				gh = body.slice(8)
-				zeks10 = gh.split("|")[0];
-				zeks20 = gh.split("|")[1];
-				reply(ind.wait())
-				anu = await fetchJson(`https://api.zeks.xyz/api/phlogo?text1=${zeks10}&text2=${zeks20}&apikey=apivinz`, {method: 'get'})
-				buffer = await getBuffer(anu.result)
-				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
-				await limitAdd(sender)
-				break
-                case 'lionlogo':
-				 // Fix Bug By ItsmeikyXSec404				
-                 if (!isRegistered) return reply( ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				if (args.length < 1) return reply('Teks nya mana?')
-				gh = body.slice(10)
-				gl1 = gh.split("|")[0];
-				gl2 = gh.split("|")[1];
-				reply(ind.wait())
-				buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/textprome2/lionlogo?apikey=WEMPYGANSS&text1=${gl1}&text2=${gl2}`)
-				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
-				await limitAdd(sender)
-				break
 		case 'nulis':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -1336,15 +1242,99 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
-		case 'tolol':
+		case 'galaxtext':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				if (args.length < 1) return reply(ind.wrongf())
-				ct = body.slice(7)
+				ct = body.slice(10)
 				reply(ind.wait())
-				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=WEMPYGANSS&text=${ct}`)
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/galaxywallpaper?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'pupycut':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(8)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/puppycute?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'galaxstyle':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(11)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/galaxystyle?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'hologram':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(9)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/hologram3d?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'textbyname':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(11)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/textbyname?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'herrypoter':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(11)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/photooxy1/harrypotter?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'greanneon':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(10)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/greenneon?apikey=WEMPYGANSS&text=${ct}`)
+				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
+				await limitAdd(sender)
+				break
+		case 'metallogo':
+				 // Fix Bug By ItsmeikyXSec404				
+                 if (!isRegistered) return reply( ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf kamu sudah terbenned!')
+				if (args.length < 1) return reply(ind.wrongf())
+				ct = body.slice(10)
+				reply(ind.wait())
+				ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/metallogo?apikey=WEMPYGANSS&text=${ct}`)
 				itsmeiky.sendMessage(from, ct, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
